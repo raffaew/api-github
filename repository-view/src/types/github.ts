@@ -5,7 +5,11 @@ export interface GithubUser {
   followers: number;
   following: number;
   location: string | null;
-  public_repos: number;
+  html_url: string | null
+}
+
+export interface licenseType {
+  name: string
 }
 
 export interface GithubRepo {
@@ -16,6 +20,7 @@ export interface GithubRepo {
   stargazers_count: number;
   updated_at: string;
   html_url: string;
+  license: licenseType | null;
 }
 
 export interface GithubContextType {

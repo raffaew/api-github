@@ -20,9 +20,12 @@ const HeaderSearch = ({ onSearch }: HeaderProps) => {
        <input 
       type="text"
       onChange={(e) => setUser(e.target.value)}
+      onKeyDown={(e) => {if (e.key === "Enter") {handleSearch()}}}
       placeholder="Buscar Usuário"
       /> 
-       <CiSearch className="iconSearch" onClick={handleSearch} />
+       <CiSearch className="iconSearch" onClick={handleSearch} 
+       />
+       
       </div>
     </div>
   )

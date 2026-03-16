@@ -41,10 +41,14 @@ const ProfileBanner = ({ user }: Props) => {
           </div>
 
           <div className="description">
-            <h1 className="user">{user?.login}</h1>
+            {user?.html_url && (
+              <a href={user?.html_url} target="blank">
+                <h1 className="user">{user?.login}</h1>
+              </a>
+            )}
+
             <p className="bio">{user?.bio}</p>
           </div>
-
         </div>
       )}
     </>

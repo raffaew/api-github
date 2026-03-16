@@ -29,7 +29,7 @@ export const GithubProvider = ({ children }: GithubProviderProps) => {
         getRepos(username),
       ]);
       setUser(userData);
-      setRepos(reposData.slice(0, 4));
+      setRepos(reposData);
     } catch (error) {
       setUser(null);
       setRepos([]);
