@@ -12,7 +12,7 @@ const Home = () => {
     <div className="home">
      <HeaderSearch onSearch={searchUser}/>
      {!user ? (
-      <h1>Procure um usuário do Github na barra de pesquisa</h1>
+      <h1>Procure um usuário existente do Github na barra de pesquisa</h1>
      ) : (
       <> 
       <ProfileBanner user={user}/>

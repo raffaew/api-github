@@ -4,7 +4,7 @@ import { PiGitForkBold, PiShieldBold, PiStarBold } from "react-icons/pi";
 import { useState } from "react";
 
 const Repositories = () => {
-  const { repos } = useGithub();
+  const { repos, loading } = useGithub();
 
   function daysAgo(dateString: string): string {
     const date = new Date(dateString);
@@ -21,8 +21,12 @@ const Repositories = () => {
 
   const reposToShow = showAll ? repos : repos.slice(0, 4);
 
+  
+
   return (
-    <div className="repositories">
+  <>
+  {loading ? (<> </>) : <div className="repositories">
+      
       <ul>
         {reposToShow.map((item) => (
           <li className="cards" key={item.id}>
@@ -58,7 +62,9 @@ const Repositories = () => {
       <p className="allRepositories" onClick={() => setShowAll(!showAll)}>
         {showAll ? "Mostrar menos" : "Mostrar todos repositórios"}
       </p>
-    </div>
+    </div>}
+  </>
+    
   );
 };
 
