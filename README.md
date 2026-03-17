@@ -53,4 +53,4 @@ npm run dev
 ```
 
 ## 🌐 Link da aplicação
-[Acessa aqui](https://raffaew.github.io/api-github/)
+[Acesse aqui](https://raffaew.github.io/api-github/)
