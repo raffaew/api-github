@@ -51,3 +51,6 @@ Para iniciar o servidor de desenvolvimento:
 ```bash
 npm run dev
 ```
+
+## 🌐 Link da aplicação
+[Acessa aqui](https://raffaew.github.io/api-github/)
