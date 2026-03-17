@@ -1,6 +1,8 @@
 # GitHub Repositórios
-
 Este projeto é uma aplicação que interage com a API do GitHub para visualizar informações sobre repositórios e usuários.
+
+<img width="933" height="638" alt="image" src="https://github.com/user-attachments/assets/cbab5ff6-3a99-424f-82c2-6f0bb1678a87" />
+
 
 ## 📚 O que é a GitHub API?
 
