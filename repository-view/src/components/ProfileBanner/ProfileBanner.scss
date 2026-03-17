@@ -78,16 +78,21 @@
     margin-top: 0px;
     top: -14px;
     gap: 2rem;
-    
+
     .infos {
       display: flex;
       flex-direction: column;
 
       .informations {
-      top: 0px
-    }
+        top: 0px;
+      }
+
     }
 
-    
+    .description {
+        .user {
+          top: 0px;
+        }
+      }
   }
 }

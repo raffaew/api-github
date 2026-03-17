@@ -74,12 +74,13 @@
 
 @media (max-width: 600px) {
   .repositories {
-    top: 740px;
+    top: 750px;
 
     ul {
       width: 100%;
       .cards {
-        height: 200px;
+        height: 230px;
+        font-size: 13px;
       }
     }
   }

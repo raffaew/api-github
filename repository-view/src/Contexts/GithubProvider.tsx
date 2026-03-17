@@ -1,21 +1,22 @@
+import { GithubContext } from '../Contexts/GithubContext';
 import { useState } from "react";
 import type { ReactNode } from "react";
 import type {
-  GithubUser,
-  GithubRepo,
+  //GithubUser,
+  //GithubRepo,
   GithubContextType,
 } from "../types/github";
 import { getUser, getRepos } from "../services/githubService";
 import axios from "axios";
-import { GithubContext } from '../Contexts/GithubContext';
+
 
 type GithubProviderProps = {
   children: ReactNode;
 };
 
 export const GithubProvider = ({ children }: GithubProviderProps) => {
-  const [user, setUser] = useState<GithubUser | null>(null);
-  const [repos, setRepos] = useState<GithubRepo[]>([]);
+  const [user, setUser] = useState<GithubContextType["user"] | null>(null); // faça assim para os demais tipos
+  const [repos, setRepos] = useState<GithubContextType["repos"]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
